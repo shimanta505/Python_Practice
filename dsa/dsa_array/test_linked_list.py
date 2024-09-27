@@ -1,4 +1,4 @@
-from dsa_array.linked_list import LinkedList
+from dsa.dsa_array.linked_list import LinkedList
 
 if __name__ == '__main__':
     linkedList: LinkedList = LinkedList()  # HEAD
@@ -11,4 +11,4 @@ if __name__ == '__main__':
     linkedList.insert_data(60)
 
     print("print the list >>>>>>>>>>")
-    linkedList.print_List()
+    linkedList.print_list()
