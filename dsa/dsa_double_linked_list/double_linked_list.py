@@ -1,6 +1,6 @@
 
 
-class Node:
+class _Node:
     def __init__(self,data: int):
         self.next = None
         self.prev = None
@@ -19,7 +19,7 @@ class DoubleLinkedList:
             pass
 
     def add(self,data: int):
-        node: Node = Node(data)
+        node: _Node = _Node(data)
         if self.__head is None:
             self.__head = node
             self.__tail = node
@@ -39,7 +39,7 @@ class DoubleLinkedList:
         elif index == self.__size -1:
             self.remove_from_last()
         else:
-            head : Node = self.__head
+            head : _Node = self.__head
 
 
             while head is not None and index > 0:
@@ -58,7 +58,7 @@ class DoubleLinkedList:
 
 
     def print_doubly_linked_list(self):
-        node: Node = self.__head
+        node: _Node = self.__head
 
         while node is not None:
             print(f"prev [{node.prev}] current [{node.data}]")
