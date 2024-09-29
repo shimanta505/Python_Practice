@@ -42,3 +42,4 @@ class LinkedStack:
             self.top = self.top.next
             self.size -= 1
             return data
+
